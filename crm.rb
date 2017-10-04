@@ -19,14 +19,17 @@ get '/add_contact' do
 end
 
 get '/contact/:id' do
-  @contact = Contact.find(params[:id])
-  
-  if @contact
+  begin
+    @contact = Contact.find(params[:id])
     erb :show_contact
-  else
+  rescue
     raise Sinatra::NotFound
   end
 end
+
+# not_found do
+#   "Nowhere to be found"
+# end
 
 
 after do
