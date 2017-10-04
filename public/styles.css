@@ -52,8 +52,9 @@ article{
   background-color: rgb(34, 222, 171);
   border-radius: 10px;
 }
-article a {
-
+article a:first-child {
+  text-decoration: none;
+  color: black;
 }
 
 footer{

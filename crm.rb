@@ -20,7 +20,12 @@ end
 
 get '/contact/:id' do
   @contact = Contact.find(params[:id])
-  erb :show_contact
+  
+  if @contact
+    erb :show_contact
+  else
+    raise Sinatra::NotFound
+  end
 end
 
 
