@@ -6,6 +6,7 @@ get '/' do
 end
 
 get '/index' do
+  @list = Contact.all
   erb :index
 end
 
@@ -13,10 +14,9 @@ get '/about' do
     erb :about
 end
 
-get '/contacts' do
+get '/add_contact' do
 
-  @list = Contact.all
-  erb :contacts
+  erb :add_contact
 end
 
 

@@ -32,7 +32,6 @@ main {
   margin:30px auto;
 }
 main p{
-  background-color: rgb(34, 222, 171);
   background-color: #FD695B;
   padding: 10px;
   font-size: 20px;
@@ -45,13 +44,16 @@ main p span {
 article{
   font-size: 18px;
   font-weight: bold;
-  width: 100%;
   margin: 5px;
   padding: 20px;
   margin-top: 16px;
   display: block;
   box-shadow: 4px 4px 20px 0px black;
-  background-color: rgb(34, 222, 171)
+  background-color: rgb(34, 222, 171);
+  border-radius: 10px;
+}
+article a {
+
 }
 
 footer{

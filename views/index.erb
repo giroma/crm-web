@@ -1,1 +1,9 @@
-<p>Home Page</p>
+  <p>There are <span><%= @list.count  %></span> Contacts</p>
+
+  <% @list.each do |contact| %>
+    <article>
+      <%=contact.id%> | <%=contact.full_name%> | <%=contact.email%> | <%=contact.note %>
+      <br>
+      <a href="#">Edit</a> | <a href="#">Delete</a>
+    </article>
+  <% end %>
