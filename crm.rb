@@ -15,8 +15,12 @@ get '/about' do
 end
 
 get '/add_contact' do
-
   erb :add_contact
+end
+
+get '/contact/:id' do
+  @contact = Contact.find(params[:id])
+  erb :show_contact
 end
 
 
