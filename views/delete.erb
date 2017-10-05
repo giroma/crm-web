@@ -1,8 +1,9 @@
+<h3>Are you sure you want to delete:</h3>
 <article>
-  <h5>Are you sure you want to delete?</h5>
   <%=@contact.id%> | <%=@contact.full_name%> | <%=@contact.email%> | <%=@contact.note %>
-  <form action='/delete/<%= @contact.id %>' method='post'>
-    <input type='hidden' name='_method' value='delete'>
-    <input type='submit' value='Delete'>
-  </form>
 </article>
+<form action='/delete/<%= @contact.id %>' method='post'>
+  <input type='hidden' name='_method' value='delete'>
+  <br>
+  <input type='submit' value='Delete'>
+</form>
