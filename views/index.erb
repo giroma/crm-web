@@ -2,8 +2,8 @@
 
   <% @list.each do |contact| %>
     <article>
-      <a href="/contact/<%=contact.id%>"><%=contact.id%> | <%=contact.full_name%> | <%=contact.email%> | <%=contact.note %></a>
+      <a href="/contact/<%=contact.id %>"><%=contact.id%> | <%=contact.full_name%> | <%=contact.email%> | <%=contact.note %></a>
       <br>
-      <a href="#">Edit</a> | <a href="#">Delete</a>
+      <a href="/edit_contact/<%=contact.id %>">Edit</a> | <a href="#">Delete</a>
     </article>
   <% end %>
