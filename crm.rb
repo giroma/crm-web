@@ -27,10 +27,6 @@ get '/contact/:id' do
   end
 end
 
-# not_found do
-#   "Nowhere to be found"
-# end
-
 
 after do
   ActiveRecord::Base.connection.close
